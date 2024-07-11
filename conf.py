@@ -5,6 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os
+
+html_output = os.environ.get('READTHEDOCS_OUTPUT', '_build/html')
 
 project = 'TK'
 copyright = '2024, TK'
