@@ -7,7 +7,6 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 
-html_output = os.environ.get('READTHEDOCS_OUTPUT', '_build/html')
 
 project = 'TK'
 copyright = '2024, TK'
@@ -30,3 +29,6 @@ exclude_patterns = []
 # Options for HTML output
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+html_output = os.environ.get('READTHEDOCS_OUTPUT', '_build/html')
+html_build_dir = os.path.join(html_output_dir, 'html')
